@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Detached Layout | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- third party css -->
+        <link href="{% static 'app-design/assets/css/vendor/jquery-jvectormap-1.2.2.css' %}" rel="stylesheet" type="text/css">
+        <!-- third party css end -->
+        
+        <!-- App css -->
+        
+        <link href="{% static 'app-design/assets/css/icons.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'app-design/assets/css/app.min.css' %}" rel="stylesheet" type="text/css" id="light-style">
+        <link href="{% static 'app-design/assets/css/app-dark.min.css' %}" rel="stylesheet" type="text/css" id="dark-style">
+       
+    </head>
+
+    <body class="loading" data-layout="detached" data-layout-config='{"layoutBoxed":false, "leftSidebarCondensed":true, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}' style="min-height:100%;">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom topnav-navbar topnav-navbar-dark">
+            <div class="container-fluid">
+
+                <!-- LOGO -->
+                <a href="index.html" class="topnav-logo">
+                    <span class="topnav-logo-lg">
+                        <img src="{% static 'customs/img/bps_kab_muna_dark.png' %}" alt="" height="40">
+                    </span>
+                    <span class="topnav-logo-sm">
+                        <img src="{% static 'app-design/img/logo_sm.png' %}" alt="" height="16">
+                    </span>
+                </a>
+
+                <ul class="list-unstyled topbar-menu float-end mb-0">
+                    <li class="notification-list">
+                        <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                            <i class="dripicons-gear noti-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a class="button-menu-mobile disable-btn">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- end Topbar -->
+        
+        <!-- Start Content-->
+        <div class="container-fluid">
+
+            <!-- Begin page -->
+            <div class="wrapper" >
+
+                <!-- ========== Left Sidebar Start ========== -->
+                <div class="leftside-menu leftside-menu-detached">
+
+                    <!--- Sidemenu -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navigation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span class="badge bg-success float-end">4</span>
+                                <span> Dashboards </span>
+                            </a>
+                            <div class="collapse" id="sidebarDashboards">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="dashboard-analytics.html">Presensi Pagi</a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard-crm.html">Presensi Sore</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Apps</li>
+
+                        <li class="side-nav-item">
+                            <a href="apps-calendar.html" class="side-nav-link">
+                                <i class="uil-calender"></i>
+                                <span> Buku Tamu </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="apps-chat.html" class="side-nav-link">
+                                <i class="uil-comments-alt"></i>
+                                <span> Administrasi </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    <div class="clearfix"></div>
+                    <!-- Sidebar -left -->
+
+                </div>
+                <!-- Left Sidebar End -->
+
+                <div class="content-page">
+                    <div class="content">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Presensi</a></li>
+                                            <li class="breadcrumb-item active">Presensi Pagi</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Dashboard Presensi (Senin, 14 Okt 2024)</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-account-multiple widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Jumlah Pegawai">Jumlah Pegawai</h5>
+                                                <h3 class="mt-3 mb-3">36 Orang</h3>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+
+                                    <div class="col-lg-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-cart-plus widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Jumlah Tamu">Jumlah Tamu</h5>
+                                                <h3 class="mt-3 mb-3">5,543 Orang</h3>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+                                </div> <!-- end row -->
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-currency-usd widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Jumlah Pegawai Hadir">Jumlah Pegawai Hadir</h5>
+                                                <h3 class="mt-3 mb-3">25 Orang</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i> 7.00%</span>
+                                                    <span class="text-nowrap">Belum Absen</span>
+                                                </p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+
+                                    <div class="col-lg-6">
+                                        <div class="card widget-flat">
+                                            <div class="card-body">
+                                                <div class="float-end">
+                                                    <i class="mdi mdi-pulse widget-icon"></i>
+                                                </div>
+                                                <h5 class="text-muted fw-normal mt-0" title="Jumlah Pegawai Izin/TL">Jumlah Pegawai Izin/TL</h5>
+                                                <h3 class="mt-3 mb-3">15 Orang</h3>
+                                                <p class="mb-0 text-muted">
+                                                    <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
+                                                    <span class="text-nowrap">Since last month</span>
+                                                </p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+                                </div> <!-- end row -->
+
+                            </div> <!-- end col -->
+
+                            <div class="col-xl-2 col-lg-2 d-flex justify-content-center align-items-center">
+                                <div class="card card-h-100">
+                                    <div class="card-header">
+                                        <h5 class="text-center">SCAN UNTUK PRESENSI </h5 class="text-center">
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <img class="img-fluid" src="{% static 'customs/img/qrcode.png' %}" alt="" height="280">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-4">
+                                <div class="card card-h-100">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title mb-3">Kehadiran Pegawai Menurut Jam</h4>
+
+                                        <div dir="ltr">
+                                            <div id="high-performing-product" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                                        </div>
+
+                                        <!-- <div style="height: 263px;" class="chartjs-chart">
+                                            <canvas id="high-performing-product"></canvas>
+                                        </div> -->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="" class="btn btn-sm btn-link float-end">Export
+                                            <i class="mdi mdi-download ms-1"></i>
+                                        </a>
+                                        <h4 class="header-title mt-2 mb-3">Daftar Presensi Pegawai</h4>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-centered table-nowrap table-hover mb-0">
+                                                <tbody>
+                                                    {% for dt in '123'  %}
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">Rifki Gustiawan, S.Tr.Stat.</h5>
+                                                                <span class="text-muted font-13">15 Oktober 2024</span>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">08.00 WITA</h5>
+                                                                <span class="text-muted font-13">Penyelesaian CKP</span>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">14.00 WITA</h5>
+                                                                <span class="text-muted font-13">Penyusunan Bukti Dukung STPIM Qgates</span>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">Hadir</h5>
+                                                                <span class="text-muted font-13">Kehadiran Penuh</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">Afifatu Zulfa, S.Tr.Stat.</h5>
+                                                                <span class="text-muted font-13">15 Oktober 2024</span>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">08.00 WITA</h5>
+                                                                <span class="text-muted font-13">Penyelesaian CKP</span>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">-</h5>
+                                                                <span class="text-muted font-13">-</span>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-14 my-1 fw-normal">Hadir</h5>
+                                                                <span class="text-muted font-13">Belum Presensi Sore</span>
+                                                            </td>
+                                                        </tr>
+                                                    {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-end">
+                                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-dots-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+                                                <!-- item-->
+                                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="header-title">Total Kehadiran</h4>
+
+                                        <div id="average-sales" class="apex-charts mb-4 mt-4" data-colors="#727cf5,#0acf97,#fa5c7c,#ffbc00"></div>
+                                        
+
+                                        <div class="chart-widget-list">
+                                            <p>
+                                                <i class="mdi mdi-square text-primary"></i> Hadir
+                                                <span class="float-end">$300.56</span>
+                                            </p>
+                                            <p>
+                                                <i class="mdi mdi-square text-danger"></i> Izin
+                                                <span class="float-end">$135.18</span>
+                                            </p>
+                                            <p>
+                                                <i class="mdi mdi-square text-success"></i> Cuti
+                                                <span class="float-end">$48.96</span>
+                                            </p>
+                                            <p class="mb-0">
+                                                <i class="mdi mdi-square text-warning"></i> Tidak Hadir
+                                                <span class="float-end">$154.02</span>
+                                            </p>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+
+                        
+                    </div> <!-- End Content -->
+
+                    <!-- Footer Start -->
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <script>document.write(new Date().getFullYear())</script> © BPS Kabupaten Muna
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- end Footer -->
+                </div> 
+                <!-- content-page -->
+
+            </div> <!-- end wrapper-->
+        </div>
+        <!-- END Container -->
+
+        <!-- Right Sidebar -->
+        <div class="end-bar">
+
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0">Settings</h5>
+            </div>
+
+            <div class="rightbar-content h-100" data-simplebar="">
+
+                <div class="p-3">
+                    <!-- Settings -->
+                    <h5 class="mt-3">Color Scheme</h5>
+                    <hr class="mt-1">
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked="">
+                        <label class="form-check-label" for="light-mode-check">Light Mode</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
+                        <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
+                    </div>
+       
+
+                    <!-- Width -->
+                    <h5 class="mt-4">Width</h5>
+                    <hr class="mt-1">
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked="">
+                        <label class="form-check-label" for="fluid-check">Fluid</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
+                        <label class="form-check-label" for="boxed-check">Boxed</label>
+                    </div>
+                </div> <!-- end padding-->
+
+            </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+
+
+        <!-- bundle -->
+        <script src="{% static 'app-design/assets/js/vendor.min.js' %}"></script>
+        <script src="{% static 'app-design/assets/js/app.min.js' %}"></script>
+        <!-- third party js -->
+        
+        <script src="{% static 'app-design/assets/js/vendor/apexcharts.min.js' %}"></script>
+        <script src="{% static 'app-design/assets/js/vendor/jquery-jvectormap-1.2.2.min.js' %}"></script>
+        <script src="{% static 'app-design/assets/js/vendor/jquery-jvectormap-world-mill-en.js' %}"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="{% static 'app-design/assets/js/pages/demo.dashboard.js' %}"></script>
+        <!-- end demo js-->
+        
+    </body>
+</html>
